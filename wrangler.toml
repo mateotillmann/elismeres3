@@ -1,0 +1,11 @@
+name = "employee-reward-tracker"
+main = "src/index.js"
+compatibility_date = "2023-12-01"
+
+# Define KV namespaces to replace Redis
+kv_namespaces = [
+  { binding = "EMPLOYEE_KV", id = "YOUR_KV_ID_HERE", preview_id = "YOUR_PREVIEW_KV_ID_HERE" }
+]
+
+[site]
+bucket = "./public"
